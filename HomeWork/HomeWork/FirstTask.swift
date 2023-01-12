@@ -11,13 +11,14 @@ class ViewController: UIViewController {
     
     // Array
     let arrayOfNumbers = [-1, -2, -3, -4, -5, 1, 2, 3, 4, 5]
+    //
     let sumOfNumber = [2, 3, 10, 20, 5]
     
     // Dictionary
-    let arrayOfString = ["january", "fabruary", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
-    var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
+    var arrayOfString = ["january", "fabruary", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     
-    var calendar: [Int:[String]] = [:]
+    //
+    var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +27,13 @@ class ViewController: UIViewController {
         print(positiveNumber(number: arrayOfNumbers))
         print(maxAndMinElement(number: arrayOfNumbers))
         print(sumOfAllNumbers(numbers: sumOfNumber))
-        
+
         // arrayOfString
-        
+
         print(arrayOfDic(mounth: arrayOfString))
         print(dic(value: dictionary))
-        
-    
+        //
+        print(year(mounth: arrayOfString))
     }
     
     // MARK: - Array
@@ -125,6 +126,18 @@ class ViewController: UIViewController {
      вашим названием, чтобы в каждом году вышло 13 месяцев.
      */
 
+    func year(mounth: [String]) -> [Int:[String]] {
+        
+        var mounth = mounth
+        mounth.append("NEW MOUNTH")
+        var calendar: [Int:[String]] = [:]
+        
+        for item in 1970...2022 {
+            let _ = calendar.updateValue(mounth, forKey: item)
+        }
+
+        return calendar
+    }
     
     
 }
