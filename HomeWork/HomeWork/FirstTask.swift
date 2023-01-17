@@ -10,48 +10,43 @@ import UIKit
 class ViewController: UIViewController {
     
     //
-    
     let arrayOfNumbers = [-1, -2, -3, -4, -5, 1, 2, 3, 4, 5]
     //
-    
     let sumOfNumber = [2, 3, 10, 20, 5]
     //
-    
     var arrayOfMounth = ["january", "fabruary", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
     var year = [Int](1970...2022)
     var day: [Int] = []
     //
-    
     var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
     //
-    
     var calendar: [Int:[String]] = [:]
-    var calendarPro: [Int:[String:Int]] = [:]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        // 1
-        print(positiveNumber(number: arrayOfNumbers))
-        // 2
-        print(maxAndMinElement(number: arrayOfNumbers))
-        // 3
-        print(sumOfAllNumbers(numbers: sumOfNumber))
-        // 4
-        print(arrayOfDic(mounth: arrayOfMounth))
-        // 5
-        print(dic(value: dictionary))
-        // 6
-        print(yearCalendar(mounth: arrayOfMounth))
-        // 7
-        number(numberOne: 6, numberTwo: 1)
-        // 8
-
-        // 9
-        print(mobile(percent: 34))
+//
+//        // 1
+//        print(positiveNumber(number: arrayOfNumbers))
+//        // 2
+//        print(maxAndMinElement(number: arrayOfNumbers))
+//        // 3
+//        print(sumOfAllNumbers(numbers: sumOfNumber))
+//        // 4
+//        print(arrayOfDic(mounth: arrayOfMounth))
+//        // 5
+//        print(dic(value: dictionary))
+//        // 6
+//        print(yearCalendar(mounth: arrayOfMounth))
+//        // 7
+//        number(numberOne: 6, numberTwo: 1)
+//        // 8
+//
+//        // 9
+//        print(mobile(percent: 34))
         
+        print(createArrayOfNumber())
 
     }
 
@@ -162,15 +157,16 @@ class ViewController: UIViewController {
      словарь с месяцами, и никаких других данных
      */
     
-    func createArrayOfNumber() -> [Int] {
+    func createCalendarPro() {
         for item in 1...31 {
             day.append(item)
         }
-        return day
+        
+        let calendarPro = [year: [arrayOfMounth: day]]
+        for (years, mounth) in calendarPro {
+            print("\(years) - \(mounth)")
+        }
     }
-    
-
-    
     
     
     /*
@@ -227,7 +223,5 @@ class ViewController: UIViewController {
             return ""
         }
     }
-    
-    
 }
 
