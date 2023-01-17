@@ -22,11 +22,12 @@ class ViewController: UIViewController {
     //
     var calendar: [Int:[String]] = [:]
     
+    let phraseUsa = "Hello, how are you!"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//
 //        // 1
 //        print(positiveNumber(number: arrayOfNumbers))
 //        // 2
@@ -42,11 +43,11 @@ class ViewController: UIViewController {
 //        // 7
 //        number(numberOne: 6, numberTwo: 1)
 //        // 8
-//
+//        print(createCalendarPro())
 //        // 9
 //        print(mobile(percent: 34))
-        
-        print(createArrayOfNumber())
+//        // 10
+        print(createPhrase(phrase: phraseUsa))
 
     }
 
@@ -57,7 +58,7 @@ class ViewController: UIViewController {
      Найдите сумму элементов массива чисел и выведите ее в консоль
      */
     
-    func positiveNumber (number: [Int]) -> [Int] {
+    func positiveNumber(number: [Int]) -> [Int] {
         
         var newArray: [Int] = []
         for value in number {
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
         return newArray
     }
     
-    func maxAndMinElement (number: [Int]) -> [Int] {
+    func maxAndMinElement(number: [Int]) -> [Int] {
         var maxNumber = 0
         var minNumber = 0
         
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
         return [maxNumber, minNumber]
     }
     
-    func sumOfAllNumbers (numbers: [Int]) -> Int {
+    func sumOfAllNumbers(numbers: [Int]) -> Int {
         var sum = 0
         
         for value in numbers {
@@ -161,7 +162,6 @@ class ViewController: UIViewController {
         for item in 1...31 {
             day.append(item)
         }
-        
         let calendarPro = [year: [arrayOfMounth: day]]
         for (years, mounth) in calendarPro {
             print("\(years) - \(mounth)")
@@ -174,7 +174,7 @@ class ViewController: UIViewController {
      сумму умноженную на 3, если нет, выведите в консоль их сумму в случае если она четное
      число.
      
-     =  Создайте строку, в которой будет храниться любая фраза из трех или более слов c
+     Создайте строку, в которой будет храниться любая фраза из трех или более слов c
      восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой
      строки (без восклицательного знака).
      В этом задании необходимо найти способ доставать слова из вашей строки, погуглите
@@ -195,6 +195,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    func createPhrase(phrase: String) -> String {
+        let newPhrase = phrase
+        let index = newPhrase.firstIndex(of: ",") ?? newPhrase.endIndex
+        let beginning = newPhrase[..<index]
+        print(beginning)
+
+        
+        return newPhrase
+    }
+    
+    
     
     /*
      Создайте функцию которая принимает 1 параметр, процент заряда батареи. Пусть
