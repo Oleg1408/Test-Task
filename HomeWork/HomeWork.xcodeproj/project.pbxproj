@@ -16,6 +16,7 @@
 		686D2724296E06AE000F6718 /* HomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2723296E06AE000F6718 /* HomeWorkTests.swift */; };
 		686D272E296E06AE000F6718 /* HomeWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D272D296E06AE000F6718 /* HomeWorkUITests.swift */; };
 		686D2730296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D272F296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift */; };
+		686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D277929A3F8DB000F6718 /* SecondTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		686D2729296E06AE000F6718 /* HomeWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D272D296E06AE000F6718 /* HomeWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITests.swift; sourceTree = "<group>"; };
 		686D272F296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		686D277929A3F8DB000F6718 /* SecondTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				686D273C296E0C46000F6718 /* Standard */,
 				686D2710296E06AC000F6718 /* FirstTask.swift */,
+				686D277929A3F8DB000F6718 /* SecondTask.swift */,
 				686D2712296E06AC000F6718 /* Main.storyboard */,
 				686D271A296E06AE000F6718 /* Info.plist */,
 			);
@@ -268,6 +271,7 @@
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */,
 				686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
