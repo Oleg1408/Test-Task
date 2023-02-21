@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
         //        ship.introduceAll()
         
         // 3
-        //
+        
         //        let alexSailor = Sailor(name: "Alex")
         //        let momoSailor = Sailor(name: "Momo")
         //        let benSailor = Sailor(name: "Ben")
@@ -36,20 +36,26 @@ class SecondViewController: UIViewController {
         
         // 4
         
-        let alexSailor = Sailor(name: "Alex")
-        let momoSailor = Sailor(name: "Momo")
-        let benSailor = Sailor(name: "Ben")
-        let bodSailor = Sailor(name: "Bob")
-        let jacknSailor = Sailor(name: "Jack")
+        //        let alexSailor = Sailor(name: "Alex")
+        //        let momoSailor = Sailor(name: "Momo")
+        //        let benSailor = Sailor(name: "Ben")
+        //        let bodSailor = Sailor(name: "Bob")
+        //        let jacknSailor = Sailor(name: "Jack")
+        //
+        //
+        //        let titanicSailor = TitanicSeilor(name: "Bob")
+        //        titanicSailor.introduceMyself()
+        //
+        //        let titanic = Titanic(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
+        //        titanic.introduceAll()
         
-        
-        let titanicSailor = TitanicSeilor(name: "Bob")
-        titanicSailor.introduceMyself()
-        
-        let titanic = Titanic(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
-        titanic.introduceAll()
-        
-        
+        // 5
+        let calc = Calculator()
+        calc.plus(numberOne: 1, numberTwo: 1)
+        calc.degree(numberOne: 2031.121, numberTwo: 313)
+        //
+        let calcPro = CalculatorPro()
+        calcPro.percentageСalculation(numberOne: 100, percent: 25, degree: 2)
     }
 }
 
@@ -104,6 +110,7 @@ class Ship {
 //  выводит в на двух языках: то же сообщение что и Ship, а после - такое же сообщение на
 //  английском. Не меняйте существующие классы Ship и Seilor
 
+
 class Titanic: Ship {
     
     override func introduceAll() {
@@ -119,3 +126,45 @@ class TitanicSeilor: Sailor {
     }
     
 }
+
+
+// 5.Создайте класс Calculator, с функциями + - * /.
+// Создайте класс CalculatorPro, который будет также вычислять процент от числа и возводить число в степень
+
+
+class Calculator {
+    
+    func plus(numberOne: Double, numberTwo: Double) {
+        print("Answer plus is – \(numberOne + numberTwo)")
+    }
+    
+    func minus(numberOne: Double, numberTwo: Double) {
+        print("Answer minus is – \(numberOne - numberTwo)")
+    }
+    
+    func multiply(numberOne: Double, numberTwo: Double) {
+        print("Answer multiply is – \(numberOne * numberTwo)")
+    }
+    
+    func degree(numberOne: Double, numberTwo: Double) {
+        print("Answer degree is – \(numberOne / numberTwo)")
+    }
+    
+}
+
+
+class CalculatorPro {
+    
+    func percentageСalculation(numberOne: Double, percent: Double, degree: Double) {
+        
+        let valueOfPercent = (numberOne * percent) / 100
+        print("Percent is – \(valueOfPercent)")
+        print("Number of degree is - \(pow(Double(valueOfPercent), degree))")
+    }
+}
+
+//    6 Создайте класс SuperProCalc, наследник CalculatorPro, который будет вычислять
+//    сложные проценты для расчета суммы депозита на указанный период времени с
+//    указанной процентной ставкой
+
+
