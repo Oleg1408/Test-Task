@@ -8,54 +8,53 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 1
-        //        let alexSailor = Sailor(name: "Alex")
-        //        let momoSailor = Sailor(name: "Momo")
-        //        momoSailor.introduceMyself()
-        //        alexSailor.introduceMyself()
-        
+//                let alexSailor = Sailor(name: "Alex")
+//                let momoSailor = Sailor(name: "Momo")
+//                momoSailor.introduceMyself()
+//                alexSailor.introduceMyself()
         // 2
-        //        let ship = Ship(nameOfShip: "Black Sheap", nameOfSailors: ["Alex", "Momo"])
-        //        ship.introduceAll()
-        
+//                let ship = Ship(nameOfShip: "Black Sheap", nameOfSailors: ["Alex", "Momo"])
+//                ship.introduceAll()
         // 3
-        
-        //        let alexSailor = Sailor(name: "Alex")
-        //        let momoSailor = Sailor(name: "Momo")
-        //        let benSailor = Sailor(name: "Ben")
-        //        let bodSailor = Sailor(name: "Bob")
-        //        let jacknSailor = Sailor(name: "Jack")
-        //
-        //        let ship = Ship(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
-        //        ship.introduceAll()
-        
-        
+//                let alexSailor = Sailor(name: "Alex")
+//                let momoSailor = Sailor(name: "Momo")
+//                let benSailor = Sailor(name: "Ben")
+//                let bodSailor = Sailor(name: "Bob")
+//                let jacknSailor = Sailor(name: "Jack")
+//
+//                let ship = Ship(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
+//                ship.introduceAll()
         // 4
         
-        //        let alexSailor = Sailor(name: "Alex")
-        //        let momoSailor = Sailor(name: "Momo")
-        //        let benSailor = Sailor(name: "Ben")
-        //        let bodSailor = Sailor(name: "Bob")
-        //        let jacknSailor = Sailor(name: "Jack")
-        //
-        //
-        //        let titanicSailor = TitanicSeilor(name: "Bob")
-        //        titanicSailor.introduceMyself()
-        //
-        //        let titanic = Titanic(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
-        //        titanic.introduceAll()
-        
+//                let alexSailor = Sailor(name: "Alex")
+//                let momoSailor = Sailor(name: "Momo")
+//                let benSailor = Sailor(name: "Ben")
+//                let bodSailor = Sailor(name: "Bob")
+//                let jacknSailor = Sailor(name: "Jack")
+//
+//
+//                let titanicSailor = TitanicSeilor(name: "Bob")
+//                titanicSailor.introduceMyself()
+//
+//                let titanic = Titanic(nameOfShip: "Black Sheap", nameOfSailors: [alexSailor.name, momoSailor.name, benSailor.name, bodSailor.name, jacknSailor.name])
+//                titanic.introduceAll()
         // 5
-        let calc = Calculator()
-        calc.plus(numberOne: 1, numberTwo: 1)
-        calc.degree(numberOne: 2031.121, numberTwo: 313)
-        //
-        let calcPro = CalculatorPro()
-        calcPro.percentageСalculation(numberOne: 100, percent: 25, degree: 2)
+//        let calc = Calculator()
+//        calc.plus(numberOne: 1, numberTwo: 1)
+//        calc.degree(numberOne: 20, numberTwo: 313)
+//        //
+//        let calcPro = CalculatorPro()
+//        calcPro.percentageСalculation(numberOne: 100, percent: 25, degree: 2)
+        //6
+//
+//        let superCalc = SuperProCalc()
+//        superCalc.hardPercent(firstSum: 100, years: 1, yearPercent: 2)
+
     }
 }
 
@@ -99,7 +98,6 @@ class Ship {
     init(nameOfShip: String, nameOfSailors: [Any]) {
         self.nameOfShip = nameOfShip
         self.nameOfSailors = nameOfSailors
-        
     }
 }
 
@@ -127,26 +125,25 @@ class TitanicSeilor: Sailor {
     
 }
 
-
 // 5.Создайте класс Calculator, с функциями + - * /.
 // Создайте класс CalculatorPro, который будет также вычислять процент от числа и возводить число в степень
 
 
 class Calculator {
     
-    func plus(numberOne: Double, numberTwo: Double) {
+    func plus(numberOne: Int, numberTwo: Int) {
         print("Answer plus is – \(numberOne + numberTwo)")
     }
     
-    func minus(numberOne: Double, numberTwo: Double) {
+    func minus(numberOne: Int, numberTwo: Int) {
         print("Answer minus is – \(numberOne - numberTwo)")
     }
     
-    func multiply(numberOne: Double, numberTwo: Double) {
+    func multiply(numberOne: Int, numberTwo: Int) {
         print("Answer multiply is – \(numberOne * numberTwo)")
     }
     
-    func degree(numberOne: Double, numberTwo: Double) {
+    func degree(numberOne: Int, numberTwo: Int) {
         print("Answer degree is – \(numberOne / numberTwo)")
     }
     
@@ -167,4 +164,13 @@ class CalculatorPro {
 //    сложные проценты для расчета суммы депозита на указанный период времени с
 //    указанной процентной ставкой
 
+
+class SuperProCalc: CalculatorPro {
+    
+    func hardPercent(firstSum: Double, years: Double, yearPercent: Double) -> Double {
+        let result = firstSum * pow((1 + yearPercent/100), years)
+        print("I give back – \(result) dollars")
+        return result
+    }
+}
 
