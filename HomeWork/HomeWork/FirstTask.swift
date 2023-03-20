@@ -28,26 +28,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1
-        print(positiveNumber(number: arrayOfNumbers))
-        // 2
-        print(maxAndMinElement(number: arrayOfNumbers))
-        // 3
-        print(sumOfAllNumbers(numbers: sumOfNumber))
-        // 4
-        print(arrayOfDic(mounth: arrayOfMounth))
-        // 5
-        print(dic(value: dictionary))
-        // 6
-        print(yearCalendar(mounth: arrayOfMounth))
-        // 7
-        number(numberOne: 6, numberTwo: 1)
-        // 8
-        print(createCalendarPro())
-        // 9
-        print(mobile(percent: 34))
-        // 10
-        createPhrase(phrase: phraseUsa)
+//        // 1
+//        print(positiveNumber(number: arrayOfNumbers))
+//        // 2
+//        print(maxAndMinElement(number: arrayOfNumbers))
+//        // 3
+//        print(sumOfAllNumbers(numbers: sumOfNumber))
+//        // 4
+//        print(arrayOfDic(mounth: arrayOfMounth))
+//        // 5
+//        print(dic(value: dictionary))
+//        // 6
+//        print(yearCalendar(mounth: arrayOfMounth))
+//        // 7
+//        number(numberOne: 6, numberTwo: 1)
+//        // 8
+//        print(createCalendarPro())
+//        // 9
+//        print(mobile(percent: 34))
+//        // 10
+//        createPhrase(phrase: phraseUsa)
         
     }
     

@@ -90,7 +90,17 @@ class SecondViewController: UIViewController {
         //        blackTaverna.enterTaverna(hero: artem)
         //        blackTaverna.enterTaverna(hero: tim)
         
-
+        //
+        //        let alex = Forward(name: "Alex", haveBall: true)
+        //        let bob = Defender(name: "Bob", atThePosition: false)
+        //
+        //        let match = FootballMatch()
+        //
+        //        match.attacker.append(alex)
+        //        match.defender.append(bob)
+        //        match.atTheField(player: alex)
+        
+        
         
     }
 }
@@ -231,6 +241,20 @@ protocol Hero: Movable, Fightable {
     var name: String {get set}
 }
 
+
+extension Movable {
+    
+    func run() {
+        print("")
+    }
+}
+
+extension Fightable {
+    func fight() {
+        print("")
+    }
+}
+
 //8. Создайте не менее двух персонажей для игры на каждый протокол из трех
 // описанных выше. Например struct Farmer: Movable { … }, struct Butcher: Fightable и т д.
 // Реализуйте методы в зависимости от структуры которую вы используете. В нашем
@@ -337,17 +361,73 @@ class Taverna {
     }
 }
 
-
 //11*. Лучший способ закрепить информацию, придумать свой способ применения протоколов.
 // Необходимо создать свою мини игру, где вы могли бы использовать протоколы, но будет минимальный набор требований:
 // Должны быть функции, возвращающие опциональные значения
 // Эти функции должны вызываться и опционалы должны быть “развернуты”
 
+protocol Attacking {
+    func attack() -> String?
+}
+
+protocol Defendering {
+    func defend() -> String?
+}
+
+protocol Player: Attacking, Defendering {
+    var name: String {get}
+    var haveBall: Bool {get}
+}
+
+struct Forward: Player {
+    var name: String
+    var haveBall: Bool
+    
+    func attack() -> String? {
+        let haveBall = haveBall ? "\(name) tack a GOOOOOL!" : "\(name) lost the ball"
+        return haveBall
+    }
+    
+    func defend() -> String? {
+        let haveBall = haveBall ? "\(name) took the ball" : "\(name) lost the ball and other team continue attack"
+        return haveBall
+    }
+}
+
+struct Defender: Defendering {
+    
+    var name: String
+    var atThePosition: Bool
+    
+    func defend() -> String? {
+        
+        if atThePosition {
+            return "\(name) save the gates"
+        } else if atThePosition == false {
+            return "\(name) missed a player"
+        }
+        return "defender attacking"
+    }
+}
 
 
-
-
-
+class FootballMatch {
+    
+    var attacker: [Attacking] = []
+    var defender: [Defendering] = []
+    
+    func atTheField(player: Player) {
+        
+        for value in defender {
+            print(value.defend() ?? "")
+        }
+        for value in attacker {
+            print(value.attack() ?? "")
+        }
+    }
+    
+    
+}
 
 //12. Напишите расширения на следующие типы:
 // Int - Функция возводит число в N-ую степень. Попробуйте решить задачу без использования
@@ -357,6 +437,7 @@ class Taverna {
 //Не забывайте, что вы можете искать информацию в интернете. Протестируйте новые расширения c
 //разными данными, используйте не менее трех тестов на каждый тип, которые максимально
 //отличаются между собой
+
 //13*. Вернитесь к созданной вами игре во втором задании и добавьте для всех протоколов
 //реализацию методов по умолчанию
 
@@ -365,27 +446,31 @@ extension Int {
     
     func numberDegree(number: Int, degree: Int) -> Int {
         var answer = 1
-        
         for _ in 1...degree {
             answer *= number
         }
-    
         return answer
     }
-    
 }
 
 extension String {
-    
-    var isPalindrome: Bool {
-        
-        get {
-            
-            return true
-        }
-        
-    }
-     
-    
-    
+    var isPalindrome: Bool {return self == String(self.reversed())}
+}
+
+extension String {
+    var reversedText: String {return String(self.reversed())}
+}
+
+extension Double {
+    var celsius: Double { return self }
+    var kelvin: Double { return self + 273.15 }
+    var fahrenheit: Double { return (self * 1.8) + 32 }
+}
+
+extension Double {
+    var km: Double { return self * 1_000.0 }
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
 }
