@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E6D8E29E3466800577749 /* ThirdViewController.swift */; };
 		686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270C296E06AC000F6718 /* AppDelegate.swift */; };
 		686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270E296E06AC000F6718 /* SceneDelegate.swift */; };
 		686D2711296E06AC000F6718 /* FirstTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2710296E06AC000F6718 /* FirstTask.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680E6D8E29E3466800577749 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		686D2709296E06AC000F6718 /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D270C296E06AC000F6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686D270E296E06AC000F6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680E6D8D29E3464100577749 /* ThirdTask */ = {
+			isa = PBXGroup;
+			children = (
+				680E6D8E29E3466800577749 /* ThirdViewController.swift */,
+			);
+			path = ThirdTask;
+			sourceTree = "<group>";
+		};
 		686D2700296E06AC000F6718 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +111,10 @@
 		686D270B296E06AC000F6718 /* HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				680E6D8D29E3464100577749 /* ThirdTask */,
+				686D277C29CB738D000F6718 /* SecondTask */,
+				686D277B29CB7377000F6718 /* FirstTask */,
 				686D273C296E0C46000F6718 /* Standard */,
-				686D2710296E06AC000F6718 /* FirstTask.swift */,
-				686D277929A3F8DB000F6718 /* SecondTask.swift */,
 				686D2712296E06AC000F6718 /* Main.storyboard */,
 				686D271A296E06AE000F6718 /* Info.plist */,
 			);
@@ -136,6 +147,22 @@
 				686D270E296E06AC000F6718 /* SceneDelegate.swift */,
 			);
 			path = Standard;
+			sourceTree = "<group>";
+		};
+		686D277B29CB7377000F6718 /* FirstTask */ = {
+			isa = PBXGroup;
+			children = (
+				686D2710296E06AC000F6718 /* FirstTask.swift */,
+			);
+			path = FirstTask;
+			sourceTree = "<group>";
+		};
+		686D277C29CB738D000F6718 /* SecondTask */ = {
+			isa = PBXGroup;
+			children = (
+				686D277929A3F8DB000F6718 /* SecondTask.swift */,
+			);
+			path = SecondTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +298,7 @@
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */,
 				686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */,
 				686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */,
 			);
