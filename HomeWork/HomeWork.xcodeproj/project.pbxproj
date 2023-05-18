@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E6D8E29E3466800577749 /* ThirdViewController.swift */; };
+		682D3BA02A16A89400076801 /* MainCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3B9F2A16A89400076801 /* MainCircleController.swift */; };
+		682D3BA22A16A8AE00076801 /* SecondCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA12A16A8AE00076801 /* SecondCircleController.swift */; };
+		682D3BA42A16A8C100076801 /* ThirdCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA32A16A8C100076801 /* ThirdCircleController.swift */; };
+		682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA52A16A8DF00076801 /* FourthCircleController.swift */; };
 		686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270C296E06AC000F6718 /* AppDelegate.swift */; };
 		686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270E296E06AC000F6718 /* SceneDelegate.swift */; };
 		686D2711296E06AC000F6718 /* FirstTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2710296E06AC000F6718 /* FirstTask.swift */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		680E6D8E29E3466800577749 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		682D3B9F2A16A89400076801 /* MainCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCircleController.swift; sourceTree = "<group>"; };
+		682D3BA12A16A8AE00076801 /* SecondCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCircleController.swift; sourceTree = "<group>"; };
+		682D3BA32A16A8C100076801 /* ThirdCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCircleController.swift; sourceTree = "<group>"; };
+		682D3BA52A16A8DF00076801 /* FourthCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCircleController.swift; sourceTree = "<group>"; };
 		686D2709296E06AC000F6718 /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D270C296E06AC000F6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686D270E296E06AC000F6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,17 @@
 			path = ThirdTask;
 			sourceTree = "<group>";
 		};
+		6864AD9C2A16A73D009EEB82 /* FourTask */ = {
+			isa = PBXGroup;
+			children = (
+				682D3B9F2A16A89400076801 /* MainCircleController.swift */,
+				682D3BA12A16A8AE00076801 /* SecondCircleController.swift */,
+				682D3BA32A16A8C100076801 /* ThirdCircleController.swift */,
+				682D3BA52A16A8DF00076801 /* FourthCircleController.swift */,
+			);
+			path = FourTask;
+			sourceTree = "<group>";
+		};
 		686D2700296E06AC000F6718 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +130,7 @@
 		686D270B296E06AC000F6718 /* HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				6864AD9C2A16A73D009EEB82 /* FourTask */,
 				680E6D8D29E3464100577749 /* ThirdTask */,
 				686D277C29CB738D000F6718 /* SecondTask */,
 				686D277B29CB7377000F6718 /* FirstTask */,
@@ -297,10 +317,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
+				682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */,
+				682D3BA22A16A8AE00076801 /* SecondCircleController.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				682D3BA02A16A89400076801 /* MainCircleController.swift in Sources */,
 				680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */,
 				686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */,
 				686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */,
+				682D3BA42A16A8C100076801 /* ThirdCircleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
