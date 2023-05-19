@@ -26,7 +26,7 @@ class MainCircleController: UIViewController {
     }
     
     
-    func greenView() {
+   private func greenView() {
         
         let greenView = UIView(frame: CGRect(x: 50, y: 260, width: 300, height: 300))
         greenView.backgroundColor = .systemGreen

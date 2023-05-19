@@ -16,7 +16,7 @@ class SecondCircleController: UIViewController {
 
     }
 
-     func greenYellowRed() {
+    private func greenYellowRed() {
         
         let greenView = UIView(frame: CGRect(x: 100, y: 56, width: 200, height: 200))
         greenView.backgroundColor = .systemGreen

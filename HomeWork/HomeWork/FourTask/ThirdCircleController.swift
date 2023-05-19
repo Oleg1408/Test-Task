@@ -17,7 +17,7 @@ class ThirdCircleController: UIViewController {
     }
     
 
-    func alfaGreenRedYellow() {
+    private func alfaGreenRedYellow() {
         
        let greenView = UIView(frame: CGRect(x: 0, y: 400, width: 200, height: 200))
        greenView.backgroundColor = .systemGreen

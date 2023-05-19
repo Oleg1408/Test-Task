@@ -17,7 +17,7 @@ class FourthCircleController: UIViewController {
     }
     
     
-    func boundsGreenYellowRedBlue() {
+    private func boundsGreenYellowRedBlue() {
         
         
         let newView = UIView(frame: CGRect(x: 0, y: 200, width: 390, height: 390))
