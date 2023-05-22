@@ -234,14 +234,44 @@
                     <view key="view" contentMode="scaleToFill" id="DWW-Yc-Bbc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTP-Nh-shb">
+                                <rect key="frame" x="274" y="641" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EyJ-8l-AsC"/>
+                                    <constraint firstAttribute="height" constant="100" id="kZQ-tT-MG7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNr-ZH-GHT">
+                                <rect key="frame" x="159" y="401" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="vD5-Ku-iB9" eventType="touchUpInside" id="Hq9-Bk-aat"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jwi-gI-DsM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JNr-ZH-GHT" firstAttribute="centerX" secondItem="DWW-Yc-Bbc" secondAttribute="centerX" id="Dme-5z-9am"/>
+                            <constraint firstItem="JNr-ZH-GHT" firstAttribute="centerY" secondItem="DWW-Yc-Bbc" secondAttribute="centerY" id="OXw-sS-RVc"/>
+                            <constraint firstItem="jwi-gI-DsM" firstAttribute="trailing" secondItem="OTP-Nh-shb" secondAttribute="trailing" constant="16" id="RZ2-k1-B13"/>
+                            <constraint firstItem="OTP-Nh-shb" firstAttribute="bottom" secondItem="jwi-gI-DsM" secondAttribute="bottom" constant="-20" id="goq-92-v1W"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="LittleBall" image="square.and.arrow.up.fill" catalog="system" id="7Kg-BF-KvA"/>
+                    <connections>
+                        <outlet property="rightConstraint" destination="RZ2-k1-B13" id="8Jw-HL-h17"/>
+                        <outlet property="settingsButton" destination="JNr-ZH-GHT" id="iQQ-RO-PNH"/>
+                        <outlet property="settingsView" destination="OTP-Nh-shb" id="Xp9-QU-cbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afX-Jy-7Co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3983" y="-4"/>
+            <point key="canvasLocation" x="-3983.0769230769229" y="-4.2654028436018958"/>
         </scene>
         <!--BigBall-->
         <scene sceneID="ddc-GR-faS">
