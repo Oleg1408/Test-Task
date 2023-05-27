@@ -14,11 +14,6 @@
 		682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA52A16A8DF00076801 /* FourthCircleController.swift */; };
 		682D3BA92A16BC6900076801 /* FiveBallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA82A16BC6900076801 /* FiveBallController.swift */; };
 		682D3BAB2A16BC8C00076801 /* FiveLittleBallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BAA2A16BC8C00076801 /* FiveLittleBallController.swift */; };
-		682D3BAE2A1BFFC900076801 /* MonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BAD2A1BFFC900076801 /* MonoViewController.swift */; };
-		682D3BB32A1C01A400076801 /* MonoXibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BB12A1C01A400076801 /* MonoXibViewController.swift */; };
-		682D3BB42A1C01A400076801 /* MonoXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682D3BB22A1C01A400076801 /* MonoXibViewController.xib */; };
-		682D3BB72A1D475E00076801 /* MenuBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BB52A1D475E00076801 /* MenuBlock.swift */; };
-		682D3BB82A1D475E00076801 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682D3BB62A1D475E00076801 /* MenuBlock.xib */; };
 		686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270C296E06AC000F6718 /* AppDelegate.swift */; };
 		686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270E296E06AC000F6718 /* SceneDelegate.swift */; };
 		686D2711296E06AC000F6718 /* FirstTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2710296E06AC000F6718 /* FirstTask.swift */; };
@@ -29,6 +24,10 @@
 		686D272E296E06AE000F6718 /* HomeWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D272D296E06AE000F6718 /* HomeWorkUITests.swift */; };
 		686D2730296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D272F296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift */; };
 		686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D277929A3F8DB000F6718 /* SecondTask.swift */; };
+		68B1041B2A228A970007A2FB /* MonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1041A2A228A970007A2FB /* MonoViewController.swift */; };
+		68B1041D2A228B130007A2FB /* CoursesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1041C2A228B130007A2FB /* CoursesUIView.swift */; };
+		68B1041F2A228B420007A2FB /* CoursesUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B1041E2A228B420007A2FB /* CoursesUIView.xib */; };
+		68B104212A229F190007A2FB /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B104202A229F190007A2FB /* ExtensionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +55,6 @@
 		682D3BA52A16A8DF00076801 /* FourthCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCircleController.swift; sourceTree = "<group>"; };
 		682D3BA82A16BC6900076801 /* FiveBallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveBallController.swift; sourceTree = "<group>"; };
 		682D3BAA2A16BC8C00076801 /* FiveLittleBallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveLittleBallController.swift; sourceTree = "<group>"; };
-		682D3BAD2A1BFFC900076801 /* MonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoViewController.swift; sourceTree = "<group>"; };
-		682D3BB12A1C01A400076801 /* MonoXibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoXibViewController.swift; sourceTree = "<group>"; };
-		682D3BB22A1C01A400076801 /* MonoXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonoXibViewController.xib; sourceTree = "<group>"; };
-		682D3BB52A1D475E00076801 /* MenuBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlock.swift; sourceTree = "<group>"; };
-		682D3BB62A1D475E00076801 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
 		686D2709296E06AC000F6718 /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D270C296E06AC000F6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686D270E296E06AC000F6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +69,10 @@
 		686D272D296E06AE000F6718 /* HomeWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITests.swift; sourceTree = "<group>"; };
 		686D272F296E06AE000F6718 /* HomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		686D277929A3F8DB000F6718 /* SecondTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTask.swift; sourceTree = "<group>"; };
+		68B1041A2A228A970007A2FB /* MonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoViewController.swift; sourceTree = "<group>"; };
+		68B1041C2A228B130007A2FB /* CoursesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesUIView.swift; sourceTree = "<group>"; };
+		68B1041E2A228B420007A2FB /* CoursesUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesUIView.xib; sourceTree = "<group>"; };
+		68B104202A229F190007A2FB /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +120,10 @@
 		682D3BAC2A1BFFAB00076801 /* SixTask */ = {
 			isa = PBXGroup;
 			children = (
-				682D3BAD2A1BFFC900076801 /* MonoViewController.swift */,
-				682D3BB12A1C01A400076801 /* MonoXibViewController.swift */,
-				682D3BB22A1C01A400076801 /* MonoXibViewController.xib */,
-				682D3BB52A1D475E00076801 /* MenuBlock.swift */,
-				682D3BB62A1D475E00076801 /* MenuBlock.xib */,
+				68B1041A2A228A970007A2FB /* MonoViewController.swift */,
+				68B1041C2A228B130007A2FB /* CoursesUIView.swift */,
+				68B1041E2A228B420007A2FB /* CoursesUIView.xib */,
+				68B104202A229F190007A2FB /* ExtensionView.swift */,
 			);
 			path = SixTask;
 			sourceTree = "<group>";
@@ -327,10 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				686D2719296E06AE000F6718 /* LaunchScreen.storyboard in Resources */,
-				682D3BB42A1C01A400076801 /* MonoXibViewController.xib in Resources */,
-				682D3BB82A1D475E00076801 /* MenuBlock.xib in Resources */,
 				686D2716296E06AE000F6718 /* Assets.xcassets in Resources */,
 				686D2714296E06AC000F6718 /* Main.storyboard in Resources */,
+				68B1041F2A228B420007A2FB /* CoursesUIView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,15 +353,15 @@
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
 				682D3BAB2A16BC8C00076801 /* FiveLittleBallController.swift in Sources */,
-				682D3BB72A1D475E00076801 /* MenuBlock.swift in Sources */,
 				682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */,
-				682D3BAE2A1BFFC900076801 /* MonoViewController.swift in Sources */,
+				68B1041B2A228A970007A2FB /* MonoViewController.swift in Sources */,
+				68B104212A229F190007A2FB /* ExtensionView.swift in Sources */,
 				682D3BA92A16BC6900076801 /* FiveBallController.swift in Sources */,
 				682D3BA22A16A8AE00076801 /* SecondCircleController.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				68B1041D2A228B130007A2FB /* CoursesUIView.swift in Sources */,
 				682D3BA02A16A89400076801 /* MainCircleController.swift in Sources */,
 				680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */,
-				682D3BB32A1C01A400076801 /* MonoXibViewController.swift in Sources */,
 				686D277A29A3F8DB000F6718 /* SecondTask.swift in Sources */,
 				686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */,
 				682D3BA42A16A8C100076801 /* ThirdCircleController.swift in Sources */,
