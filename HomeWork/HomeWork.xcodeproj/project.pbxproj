@@ -28,6 +28,8 @@
 		68B1041D2A228B130007A2FB /* CoursesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B1041C2A228B130007A2FB /* CoursesUIView.swift */; };
 		68B1041F2A228B420007A2FB /* CoursesUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B1041E2A228B420007A2FB /* CoursesUIView.xib */; };
 		68B104212A229F190007A2FB /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B104202A229F190007A2FB /* ExtensionView.swift */; };
+		68B104232A274D4F0007A2FB /* BlockUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B104222A274D4F0007A2FB /* BlockUIView.swift */; };
+		68B104252A274D690007A2FB /* BlockUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B104242A274D690007A2FB /* BlockUIView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		68B1041C2A228B130007A2FB /* CoursesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesUIView.swift; sourceTree = "<group>"; };
 		68B1041E2A228B420007A2FB /* CoursesUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesUIView.xib; sourceTree = "<group>"; };
 		68B104202A229F190007A2FB /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		68B104222A274D4F0007A2FB /* BlockUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUIView.swift; sourceTree = "<group>"; };
+		68B104242A274D690007A2FB /* BlockUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockUIView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				68B1041C2A228B130007A2FB /* CoursesUIView.swift */,
 				68B1041E2A228B420007A2FB /* CoursesUIView.xib */,
 				68B104202A229F190007A2FB /* ExtensionView.swift */,
+				68B104222A274D4F0007A2FB /* BlockUIView.swift */,
+				68B104242A274D690007A2FB /* BlockUIView.xib */,
 			);
 			path = SixTask;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				686D2719296E06AE000F6718 /* LaunchScreen.storyboard in Resources */,
 				686D2716296E06AE000F6718 /* Assets.xcassets in Resources */,
 				686D2714296E06AC000F6718 /* Main.storyboard in Resources */,
+				68B104252A274D690007A2FB /* BlockUIView.xib in Resources */,
 				68B1041F2A228B420007A2FB /* CoursesUIView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
+				68B104232A274D4F0007A2FB /* BlockUIView.swift in Sources */,
 				682D3BAB2A16BC8C00076801 /* FiveLittleBallController.swift in Sources */,
 				682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */,
 				68B1041B2A228A970007A2FB /* MonoViewController.swift in Sources */,

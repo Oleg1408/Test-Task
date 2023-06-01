@@ -42,5 +42,18 @@ class CoursesUIView: UIView {
         coursesView.fixInView(self)
     }
     
+    
+    func configureCourses() {
+    
+        flagUsa.image = UIImage(named: "usa")
+        flagEuro.image = UIImage(named: "euro")
+        coursesLable.text = "Еще"
+        textDollarUsa.text = "Доллар США"
+        textEuro.text = "Евро"
+        courseUsa.text = "36.65 / 37.25"
+        courseEuro.text = "41.22 / 45.22"
+
+    }
+    
 }
 
