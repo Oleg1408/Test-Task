@@ -7,13 +7,19 @@
 
 import UIKit
 
-class BlockUIView: UIView {
+protocol MenuBlockDelegate: AnyObject {
+    
+    func menuElementPressed(sender: BlockUIView)
+    
+}
 
+class BlockUIView: UIView {
+    
     @IBOutlet var blockView: UIView!
     @IBOutlet weak var imageBlockView: UIImageView!
     @IBOutlet weak var textBlockLable: UILabel!
     
-    
+    weak var delegate: MenuBlockDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +30,7 @@ class BlockUIView: UIView {
         super.init(coder: aDecoder)
         commonInit()
     }
-
+    
     func commonInit() {
         Bundle.main.loadNibNamed("BlockUIView", owner: self, options: nil)
         blockView.fixInView(self)
@@ -34,8 +40,13 @@ class BlockUIView: UIView {
         
         imageBlockView.image = image
         textBlockLable.text = text
+    }
+    
+    @IBAction func pressBlock(_ sender: Any) {
+        
+        delegate?.menuElementPressed(sender: self)
         
     }
     
-
 }
+

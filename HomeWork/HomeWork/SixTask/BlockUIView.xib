@@ -32,14 +32,26 @@
                     <color key="textColor" red="0.99838226010101006" green="0.99838226010101006" blue="0.99838226010101006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXF-is-Z8r">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="267"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="pressBlock:" destination="-1" eventType="touchUpInside" id="Nh5-55-guX"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.15294116739999999" green="0.15294116739999999" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="JXF-is-Z8r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4L5-hk-At4"/>
                 <constraint firstItem="L7h-QR-29i" firstAttribute="top" secondItem="N25-pb-vVd" secondAttribute="bottom" constant="24" id="EF4-if-mtI"/>
                 <constraint firstItem="L7h-QR-29i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="QFf-1S-Cfk"/>
                 <constraint firstItem="N25-pb-vVd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="aKW-Ut-vUz"/>
                 <constraint firstItem="N25-pb-vVd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bTx-iz-8G6"/>
+                <constraint firstItem="JXF-is-Z8r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cWQ-XX-px6"/>
+                <constraint firstItem="JXF-is-Z8r" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="pjq-Ja-sqH"/>
+                <constraint firstItem="JXF-is-Z8r" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xX2-y9-jVQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-37.681159420289859" y="-100.78125"/>

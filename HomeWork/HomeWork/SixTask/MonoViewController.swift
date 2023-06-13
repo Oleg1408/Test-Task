@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MonoViewController: UIViewController {
+
+class MonoViewController: UIViewController, MenuBlockDelegate {
     
     @IBOutlet weak var tabBarLable: CoursesUIView!
     
@@ -20,8 +21,13 @@ class MonoViewController: UIViewController {
     @IBOutlet weak var imageLeft: UIImageView!
     @IBOutlet weak var imageRight: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        centralMenuBlock.delegate = self
+        leftMenuBlock.delegate = self
+        rightMenuBlock.delegate = self
         
         tabBarLable.configureCourses()
         greenView()
@@ -31,10 +37,23 @@ class MonoViewController: UIViewController {
         
     }
     
+    
+    func menuElementPressed(sender: BlockUIView) {
+        
+        if sender === centralMenuBlock {
+            print("Central Menu Block pressed")
+        } else if sender === leftMenuBlock {
+            print("Left Menu Block pressed")
+        } else if sender === rightMenuBlock {
+            print("Right Menu Block pressed")
+        } else {
+            print("Unknown block pressed")
+        }
+    }
+    
+    
     func greenView() {
         mainTextLable.text = "Доступный лимит"
         ukrFlagImage.image = UIImage(named: "ukraine")
     }
-
-
 }
