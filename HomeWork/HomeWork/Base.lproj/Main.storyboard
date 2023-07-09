@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xvm-6L-vVB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TyF-HA-hvZ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -409,6 +409,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZB-qk-gQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3983.0769230769229" y="1087.6777251184833"/>
+        </scene>
+        <!--Insta View Controller-->
+        <scene sceneID="EPY-6F-mEm">
+            <objects>
+                <viewController storyboardIdentifier="InstaViewController\" id="TyF-HA-hvZ" customClass="InstaViewController" customModule="HomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ip-K7-mLk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xLc-eZ-0nC">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TyF-HA-hvZ" id="Lsw-Ty-90t"/>
+                                    <outlet property="delegate" destination="TyF-HA-hvZ" id="RMf-95-Raz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rjm-pv-o66"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xLc-eZ-0nC" firstAttribute="leading" secondItem="Rjm-pv-o66" secondAttribute="leading" id="LFG-QV-dBM"/>
+                            <constraint firstItem="xLc-eZ-0nC" firstAttribute="trailing" secondItem="Rjm-pv-o66" secondAttribute="trailing" id="MNh-E0-Hk1"/>
+                            <constraint firstItem="xLc-eZ-0nC" firstAttribute="top" secondItem="8ip-K7-mLk" secondAttribute="top" id="Vsn-3E-Rhy"/>
+                            <constraint firstAttribute="bottom" secondItem="xLc-eZ-0nC" secondAttribute="bottom" id="aNX-Bu-fLt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTable" destination="xLc-eZ-0nC" id="QkX-aK-lcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq8-2G-4lH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2547.6923076923076" y="862.32227488151659"/>
         </scene>
         <!--BigBall-->
         <scene sceneID="ddc-GR-faS">
