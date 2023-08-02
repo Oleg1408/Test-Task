@@ -9,6 +9,7 @@ import UIKit
 
 class InstaViewController: UIViewController {
     
+    
     @IBOutlet weak var mainTable: UITableView!
     
     let personList: [Post] = listUsers.usersList
