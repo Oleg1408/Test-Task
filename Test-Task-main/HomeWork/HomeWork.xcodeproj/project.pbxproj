@@ -14,6 +14,9 @@
 		682D3BA62A16A8DF00076801 /* FourthCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA52A16A8DF00076801 /* FourthCircleController.swift */; };
 		682D3BA92A16BC6900076801 /* FiveBallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BA82A16BC6900076801 /* FiveBallController.swift */; };
 		682D3BAB2A16BC8C00076801 /* FiveLittleBallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3BAA2A16BC8C00076801 /* FiveLittleBallController.swift */; };
+		683350E42AA883F000A2DD96 /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683350E32AA883F000A2DD96 /* JsonViewController.swift */; };
+		683350E62AA887BA00A2DD96 /* RawData.json in Resources */ = {isa = PBXBuildFile; fileRef = 683350E52AA887BA00A2DD96 /* RawData.json */; };
+		683350E92AA8A37F00A2DD96 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683350E82AA8A37F00A2DD96 /* FilmViewController.swift */; };
 		686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270C296E06AC000F6718 /* AppDelegate.swift */; };
 		686D270F296E06AC000F6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D270E296E06AC000F6718 /* SceneDelegate.swift */; };
 		686D2711296E06AC000F6718 /* FirstTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D2710296E06AC000F6718 /* FirstTask.swift */; };
@@ -63,6 +66,9 @@
 		682D3BA52A16A8DF00076801 /* FourthCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCircleController.swift; sourceTree = "<group>"; };
 		682D3BA82A16BC6900076801 /* FiveBallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveBallController.swift; sourceTree = "<group>"; };
 		682D3BAA2A16BC8C00076801 /* FiveLittleBallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveLittleBallController.swift; sourceTree = "<group>"; };
+		683350E32AA883F000A2DD96 /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
+		683350E52AA887BA00A2DD96 /* RawData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RawData.json; sourceTree = "<group>"; };
+		683350E82AA8A37F00A2DD96 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
 		686D2709296E06AC000F6718 /* HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D270C296E06AC000F6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		686D270E296E06AC000F6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +152,23 @@
 			path = SixTask;
 			sourceTree = "<group>";
 		};
+		683350E22AA883D500A2DD96 /* NineTask */ = {
+			isa = PBXGroup;
+			children = (
+				683350E32AA883F000A2DD96 /* JsonViewController.swift */,
+				683350E52AA887BA00A2DD96 /* RawData.json */,
+			);
+			path = NineTask;
+			sourceTree = "<group>";
+		};
+		683350E72AA8A36A00A2DD96 /* NineTaskTwo */ = {
+			isa = PBXGroup;
+			children = (
+				683350E82AA8A37F00A2DD96 /* FilmViewController.swift */,
+			);
+			path = NineTaskTwo;
+			sourceTree = "<group>";
+		};
 		6864AD9C2A16A73D009EEB82 /* FourTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +203,8 @@
 		686D270B296E06AC000F6718 /* HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				683350E72AA8A36A00A2DD96 /* NineTaskTwo */,
+				683350E22AA883D500A2DD96 /* NineTask */,
 				6872CFEA2A574DE700DCC945 /* EightTask */,
 				689C36E32A55C50300C34341 /* SevenTask */,
 				682D3BAC2A1BFFAB00076801 /* SixTask */,
@@ -364,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				686D2719296E06AE000F6718 /* LaunchScreen.storyboard in Resources */,
+				683350E62AA887BA00A2DD96 /* RawData.json in Resources */,
 				686D2716296E06AE000F6718 /* Assets.xcassets in Resources */,
 				6872CFF32A59B48D00DCC945 /* UsersTableViewCell.xib in Resources */,
 				686D2714296E06AC000F6718 /* Main.storyboard in Resources */,
@@ -395,6 +421,7 @@
 			files = (
 				686D2711296E06AC000F6718 /* FirstTask.swift in Sources */,
 				68B104232A274D4F0007A2FB /* BlockUIView.swift in Sources */,
+				683350E42AA883F000A2DD96 /* JsonViewController.swift in Sources */,
 				6872CFEC2A574E2D00DCC945 /* InstaViewController.swift in Sources */,
 				682D3BAB2A16BC8C00076801 /* FiveLittleBallController.swift in Sources */,
 				6872CFF22A59B48D00DCC945 /* UsersTableViewCell.swift in Sources */,
@@ -404,6 +431,7 @@
 				682D3BA92A16BC6900076801 /* FiveBallController.swift in Sources */,
 				682D3BA22A16A8AE00076801 /* SecondCircleController.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				683350E92AA8A37F00A2DD96 /* FilmViewController.swift in Sources */,
 				68B1041D2A228B130007A2FB /* CoursesUIView.swift in Sources */,
 				682D3BA02A16A89400076801 /* MainCircleController.swift in Sources */,
 				689C36E52A55C56D00C34341 /* TableViewController.swift in Sources */,

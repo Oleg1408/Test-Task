@@ -1,0 +1,36 @@
+{
+    "company": {
+        "count": 12,
+        "companyDescription": "American corporation, developer of personal and tablet computers, audio players, smartphones, software and digital content. The headquarters is located in Cupertino, California. Almost all Apple products are produced by contract manufacturers at factories in Asia, the largest contractor is the Taiwanese company Foxconn, the largest plant is in Zhengzhou",
+        "listOfData": [
+            {
+                "name": "Alex",
+                "modelNumber": "Iphone 10",
+                "countries": ["USA", "Ukraine", "Canada"],
+                "price": {
+                    "regions": [
+                        {
+                            "name": "be-be-be",
+                            "price": 2000
+                        }
+                    ]
+                },
+                "year": 2022
+            },
+            {
+                "name": "Ben",
+                "modelNumber": "Iphone 11",
+                "countries": ["France", "Germany", "Japan"],
+                "price": {
+                    "regions": [
+                        {
+                            "name": "ta-ta-ta",
+                            "price": 5000
+                        }
+                    ]
+                },
+                "year": 2022
+            }
+        ]
+    }
+}
