@@ -13,6 +13,8 @@ target 'HomeWork' do
 
 
 pod 'Alamofire'
+pod 'SDWebImage', '~> 5.0'
+
 
 
 
