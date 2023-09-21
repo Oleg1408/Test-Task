@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCv-6s-MiG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jVo-pJ-JCR">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -144,6 +144,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9AH-y6-WXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-453.84615384615381" y="-1528.4360189573458"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="4z9-kg-0vn">
+            <objects>
+                <viewController storyboardIdentifier="UserViewController" id="VSK-So-Hyb" customClass="UserViewController" customModule="HomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soq-rv-5nn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Coq-HQ-Oji">
+                                <rect key="frame" x="12" y="103" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ei-gx-RbB">
+                                <rect key="frame" x="12" y="169" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PXB-Vf-Lf8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PXB-Vf-Lf8" firstAttribute="trailing" secondItem="5Ei-gx-RbB" secondAttribute="trailing" constant="12" id="1po-LL-UX1"/>
+                            <constraint firstItem="PXB-Vf-Lf8" firstAttribute="trailing" secondItem="Coq-HQ-Oji" secondAttribute="trailing" constant="12" id="7e9-go-xWx"/>
+                            <constraint firstItem="5Ei-gx-RbB" firstAttribute="top" secondItem="Coq-HQ-Oji" secondAttribute="bottom" constant="32" id="E06-2r-Poh"/>
+                            <constraint firstItem="Coq-HQ-Oji" firstAttribute="leading" secondItem="PXB-Vf-Lf8" secondAttribute="leading" constant="12" id="WLx-r4-1VQ"/>
+                            <constraint firstItem="5Ei-gx-RbB" firstAttribute="leading" secondItem="PXB-Vf-Lf8" secondAttribute="leading" constant="12" id="kTJ-LY-oSC"/>
+                            <constraint firstItem="Coq-HQ-Oji" firstAttribute="top" secondItem="PXB-Vf-Lf8" secondAttribute="top" constant="12" id="svN-vv-QGG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ojV-0z-7ZU">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="FCl-UC-Yc4">
+                            <connections>
+                                <action selector="pressButtonSave:" destination="VSK-So-Hyb" id="xaA-7Y-9Ac"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainViewController" destination="soq-rv-5nn" id="wCB-n1-AcD"/>
+                        <outlet property="nameField" destination="Coq-HQ-Oji" id="91Z-kY-GbZ"/>
+                        <outlet property="saveButton" destination="FCl-UC-Yc4" id="MO3-dY-csI"/>
+                        <outlet property="secondNameField" destination="5Ei-gx-RbB" id="2dH-RK-KmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uG-4I-3RN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2680" y="-1422.5118483412321"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TPO-VC-776">
@@ -735,6 +783,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVO-NZ-0sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5963.0769230769229" y="-1528.4360189573458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yUo-TX-6E6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jVo-pJ-JCR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BCl-1J-tPH">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VSK-So-Hyb" kind="relationship" relationship="rootViewController" id="vEZ-SS-vUg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="up3-6i-hFl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.7692307692307" y="-1422.5118483412321"/>
         </scene>
     </scenes>
     <resources>
