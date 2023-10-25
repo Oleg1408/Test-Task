@@ -48,6 +48,9 @@
 		68B104212A229F190007A2FB /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B104202A229F190007A2FB /* ExtensionView.swift */; };
 		68B104232A274D4F0007A2FB /* BlockUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B104222A274D4F0007A2FB /* BlockUIView.swift */; };
 		68B104252A274D690007A2FB /* BlockUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B104242A274D690007A2FB /* BlockUIView.xib */; };
+		68C138A32AE863B1003B63CA /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C138A22AE863B1003B63CA /* ShoppingListViewController.swift */; };
+		68C138A52AE99EF2003B63CA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C138A42AE99EF2003B63CA /* List.swift */; };
+		68C138A72AE9AA63003B63CA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C138A62AE9AA63003B63CA /* DataManager.swift */; };
 		A00A10C84EDB186FE7F3680B /* Pods_HomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99464E311B076D8FF6D629CF /* Pods_HomeWork.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +116,9 @@
 		68B104202A229F190007A2FB /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		68B104222A274D4F0007A2FB /* BlockUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUIView.swift; sourceTree = "<group>"; };
 		68B104242A274D690007A2FB /* BlockUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockUIView.xib; sourceTree = "<group>"; };
+		68C138A22AE863B1003B63CA /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		68C138A42AE99EF2003B63CA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		68C138A62AE9AA63003B63CA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		84E6ADE7A99C3B50B78D1CA4 /* Pods-HomeWork-HomeWorkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork-HomeWorkUITests.release.xcconfig"; path = "Target Support Files/Pods-HomeWork-HomeWorkUITests/Pods-HomeWork-HomeWorkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		922A6BC29B4D74C9B4FC8697 /* Pods-HomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork.debug.xcconfig"; path = "Target Support Files/Pods-HomeWork/Pods-HomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		95E9C8DD70EC932F31862EB2 /* Pods-HomeWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkTests/Pods-HomeWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +292,7 @@
 		686D270B296E06AC000F6718 /* HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				68C138A12AE86381003B63CA /* ElevenTask */,
 				683350F62ABCAC1400A2DD96 /* UserDefaults */,
 				683350F52AA8D1B200A2DD96 /* TenTask */,
 				683350E72AA8A36A00A2DD96 /* NineTaskTwo */,
@@ -367,6 +374,16 @@
 				689C36E62A55CC6600C34341 /* InfoTableViewController.swift */,
 			);
 			path = SevenTask;
+			sourceTree = "<group>";
+		};
+		68C138A12AE86381003B63CA /* ElevenTask */ = {
+			isa = PBXGroup;
+			children = (
+				68C138A22AE863B1003B63CA /* ShoppingListViewController.swift */,
+				68C138A42AE99EF2003B63CA /* List.swift */,
+				68C138A62AE9AA63003B63CA /* DataManager.swift */,
+			);
+			path = ElevenTask;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,13 +645,16 @@
 				682D3BA92A16BC6900076801 /* FiveBallController.swift in Sources */,
 				682D3BA22A16A8AE00076801 /* SecondCircleController.swift in Sources */,
 				683350EC2AA8AF0700A2DD96 /* Results.swift in Sources */,
+				68C138A32AE863B1003B63CA /* ShoppingListViewController.swift in Sources */,
 				686D270D296E06AC000F6718 /* AppDelegate.swift in Sources */,
+				68C138A72AE9AA63003B63CA /* DataManager.swift in Sources */,
 				683350E92AA8A37F00A2DD96 /* FilmViewController.swift in Sources */,
 				68B1041D2A228B130007A2FB /* CoursesUIView.swift in Sources */,
 				682D3BA02A16A89400076801 /* MainCircleController.swift in Sources */,
 				689C36E52A55C56D00C34341 /* TableViewController.swift in Sources */,
 				680E6D8F29E3466800577749 /* ThirdViewController.swift in Sources */,
 				683350FA2ABCB18900A2DD96 /* SettingsUsers.swift in Sources */,
+				68C138A52AE99EF2003B63CA /* List.swift in Sources */,
 				6872CFEE2A574F6200DCC945 /* PostModel.swift in Sources */,
 				689C36E72A55CC6600C34341 /* InfoTableViewController.swift in Sources */,
 				683350F42AA8D1A900A2DD96 /* FotoViewController.swift in Sources */,

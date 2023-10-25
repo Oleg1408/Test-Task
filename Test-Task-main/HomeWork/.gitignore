@@ -1,0 +1,9 @@
+# Xcode
+.DS_Store
+xcuserdata
+*.xcuserstate
+DerivedData
+*.swiftdoc
+*.modulemap
+Pods/
+Carthage/
