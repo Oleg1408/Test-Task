@@ -14,10 +14,23 @@ class FilmViewController: UIViewController {
     
     var filmArray: [ResultsOfFilm] = []
     
+    var currentPage = 1
+    let itemsPerPage = 20
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mainRegisterCell()
+        loadData()
+    }
+    
+    func loadNextPage() {
+           currentPage += 1
+           loadData()
+       }
+    
+    
+    func loadData() {
         
         let url =  "https://api.themoviedb.org/3/movie/top_rated?api_key=f28226d77e6c2b87d7d08bc99737fd1a&language=en-US&page=1"
         
@@ -33,6 +46,8 @@ class FilmViewController: UIViewController {
         }
     }
 }
+
+
     
 
 extension FilmViewController: UITableViewDelegate, UITableViewDataSource {
@@ -51,6 +66,13 @@ extension FilmViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 500
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == filmArray.count - 1 {
+            loadNextPage()
+        }
     }
 }
 

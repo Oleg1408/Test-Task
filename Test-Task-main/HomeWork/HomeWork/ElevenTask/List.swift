@@ -10,7 +10,6 @@ import RealmSwift
 
 class List: Object {
     
-    @objc dynamic var name = "" 
-    
+    @objc dynamic var name = ""
     
 }
